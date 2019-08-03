@@ -55,7 +55,7 @@ sudo systemctl <serviceName> start
   * `.class1.class2`: means needs to have both
   * `.class1, .class2`: means has one or the other
 
-## sebpack (2, not sure about other versions), ignore files in  watch mode:
+## webpack (2, not sure about other versions), ignore files in  watch mode:
   * Use watchIgnorePlugin, NEEDS ABSOLUTE PATHS TO WORK (could not get it to work otherwise).
 
 ## npm, glob package:

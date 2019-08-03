@@ -70,4 +70,3 @@ sudo systemctl <serviceName> start
 
 ## Shell/Bash, single line `while`:
   * `while true; do foo; sleep 2; done;`
-

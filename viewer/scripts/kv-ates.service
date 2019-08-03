@@ -1,0 +1,13 @@
+[Unit]
+Description=kv-ates dev server service
+
+[Service]
+
+StandardOutput=journal
+
+WorkingDirectory=/home/chapa
+
+ExecStart=/home/chapa/kv-ates/viewer/scripts/run-dev.sh
+
+[Install]
+WantedBy=default.target

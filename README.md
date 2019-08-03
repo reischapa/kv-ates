@@ -53,9 +53,9 @@ sudo systemctl <serviceName> start
   * nope, solved on .bashrc
 
 ## CSS, the three same differences:
-  * .class1 .class2: means inside
-  * .class1.class2: means needs to have both
-  * .class1, .class2: means has one or the other
+  * `.class1 .class2`: means inside
+  * `.class1.class2`: means needs to have both
+  * `.class1, .class2`: means has one or the other
 
 ## Webpack (2 for sure, not sure about other versions), Ignore files in  watch mode:
   * Use watchIgnorePlugin, NEEDS ABSOLUTE PATHS TO WORK (could not get it to work otherwise).

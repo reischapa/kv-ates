@@ -57,16 +57,27 @@ sudo systemctl <serviceName> start
   * `.class1.class2`: means needs to have both
   * `.class1, .class2`: means has one or the other
 
-## Webpack (2 for sure, not sure about other versions), Ignore files in  watch mode:
+## Webpack (2, not sure about other versions), ignore files in  watch mode:
   * Use watchIgnorePlugin, NEEDS ABSOLUTE PATHS TO WORK (could not get it to work otherwise).
 
-## mount, Check if dir is mountpoint:
+## npm, glob package:
+  * needs special option to return full paths
+  * needs to have symlinks flagged as such in order to follow them
+
+## mount, check if dir is mountpoint:
   * `findmnt -M`, `-J` flag outputs json for `jq`
+
+## Shell/Bash, syntax:
+  * single brakets need spaces between next characters
 
 ## Shell/Bash, conditional flags:
   * `-f`: exists file
   * `-z`: string with zero length
   * `-n`: string with non-zero length
+  * `-d`: exists dir
+
+## Shell/Bash, negate condition:
+  * `[ ! -f filename ]`, for instance
 
 ## Shell/Bash, single line `while`:
   * `while true; do foo; sleep 2; done;`

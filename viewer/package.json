@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "./scripts/run-dev.sh",
-    "save:c": "git add . && git commit -m \"update README.md\" && git push",
+    "save:c": "git add ../ && git commit -m \"update README.md\" && git push",
     "install-service": "mkdir -pv $HOME/.local/share/systemd/user && cp -v scripts/kv-ates.service $HOME/.local/share/systemd/user/kv-ates.service && systemctl --user enable kv-ates.service && systemctl --user daemon-reload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

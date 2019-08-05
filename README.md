@@ -79,3 +79,12 @@ sudo systemctl <serviceName> start
 
 ## shell/Bash, single line `while`:
   * `while true; do foo; sleep 2; done;`
+
+## javascript, what the...:
+  * in browsers, any global variable called `name` declared in the global scope is INVARIABLY treated as 
+    if it is a string (credit to @joaosamouco and @joaopintomfc):
+
+    ```
+    var name = () => 1;
+    console.log(typeof name) // "string"
+    ```

@@ -82,7 +82,8 @@ sudo systemctl <serviceName> start
 
 ## javascript, what the...:
   * in browsers, any global variable called `name` declared in the global scope is INVARIABLY treated as 
-    if it is a string (credit to @joaosamouco and @joaopintomfc):
+    if it is a string (credit to [@joaosamouco](https://github.com/joaosamouco)
+    and [@joaopintomfc](https://github.com/joaopintomfc)):
 
     ```
     var name = () => 1;

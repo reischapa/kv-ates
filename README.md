@@ -89,3 +89,8 @@ sudo systemctl <serviceName> start
     var name = () => 1;
     console.log(typeof name) // "string"
     ```
+## git, show diff without header and add context:
+  * `git diff --no-prefix -U1000 HEAD^ HEAD` 
+
+## git, reference to nth last commit:
+  * `git diff HEAD~n HEAD`

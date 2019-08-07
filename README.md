@@ -100,6 +100,6 @@ sudo systemctl <serviceName> start
   * `set pager=1`
   * `ls`
   * `set root=(hd?,?)`
-  * `linux <stuff>`
+  * `linux <stuff> root=/dev/sdX`
   * `initrd <stuff>`
   * `boot`

@@ -46,6 +46,7 @@ sudo systemctl <serviceName> start
     * node
     * mobile-broadband-provider, modemmanager (3g, if not installed by installer)
     * thunar/nautilus (makes usb drives so much easier)
+    * nm-connection-editor
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc

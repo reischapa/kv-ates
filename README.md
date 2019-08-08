@@ -104,3 +104,6 @@ sudo systemctl <serviceName> start
   * `linux <stuff> root=/dev/sdX`
   * `initrd <stuff>`
   * `boot`
+
+## grub, grub-install:
+  * `--efi-directory` option takes the folder that CONTAINS the efi directory, not the efi directory path itself

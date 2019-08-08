@@ -98,12 +98,14 @@ sudo systemctl <serviceName> start
   * `git diff HEAD~n HEAD`
 
 ## grub, recover from command line:
-  * `set pager=1`
-  * `ls`
-  * `set root=(hd?,?)`
-  * `linux <stuff> root=/dev/sdX`
-  * `initrd <stuff>`
-  * `boot`
+  ```
+  set pager=1
+  ls
+  set root=(hd?,?)
+  linux <stuff> root=/dev/sdX
+  initrd <stuff>
+  boot
+  ```
 
 ## grub, grub-install:
   * `--efi-directory` option takes the folder that CONTAINS the efi directory, not the efi directory path itself

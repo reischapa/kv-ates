@@ -16,6 +16,12 @@ sudo systemctl <serviceName> enable
 sudo systemctl <serviceName> start 
 ```
 
+## general, install `yay`:
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
 
 ## general, needed programs: 
   * npm:
@@ -109,3 +115,5 @@ sudo systemctl <serviceName> start
 
 ## grub, grub-install:
   * `--efi-directory` option takes the folder that CONTAINS the efi directory, not the efi directory path itself
+
+

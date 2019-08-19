@@ -53,6 +53,7 @@ makepkg -si
     * mobile-broadband-provider, modemmanager (3g, if not installed by installer)
     * thunar/nautilus (makes usb drives so much easier)
     * nm-connection-editor
+    * ttf-ms-fonts (for helvetica and other "default" ms fonts)
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc

@@ -70,6 +70,20 @@ makepkg -si
   * needs special option to return full paths
   * needs to have symlinks flagged as such in order to follow them
 
+## npm, which logger?:
+  * `debug`, `winston`, `log4js` (order of popularity 2k18)
+
+## npm, input parser:
+  * `commander.js`:
+  ```
+  const program = require('commander');
+  program.option('-d, --debug', 'extra debugging'); //etc
+  program.parse(process.argv);
+  
+  // profit
+
+  ```
+
 ## mount, check if dir is mountpoint:
   * `findmnt -M`, `-J` flag outputs json for `jq`
 

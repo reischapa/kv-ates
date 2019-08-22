@@ -79,9 +79,6 @@ makepkg -si
   const program = require('commander');
   program.option('-d, --debug', 'extra debugging'); //etc
   program.parse(process.argv);
-  
-  // profit
-
   ```
 
 ## mount, check if dir is mountpoint:

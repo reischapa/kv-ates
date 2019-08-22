@@ -131,4 +131,20 @@ makepkg -si
 ## grub, grub-install:
   * `--efi-directory` option takes the folder that CONTAINS the efi directory, not the efi directory path itself
 
+## node.js, `path.normalize` vs `path.resolve` ([SO answer](https://stackoverflow.com/a/10823859)):
+  _"Ironically, this means that path.resolve() produces a relative path in
+  absolute terms (you could execute it anywhere, and it would produce the same
+  result), whereas path.normalize() produces an absolute path in relative terms
+  (you must execute it in the path relative to which you want to calculate the
+  absolute result)."_
+
+  * Meaning, `path.resolve(__dirname, <relativePath>)` results in an absolute
+  filepath, since `__dirname` is always absolute.
+
+  * To get an absolute filepath from `resolve`, we would then pass it to
+  `normalize`: `path.normalize(path.resolve('home/foo', 'bar'))` results in
+  `<pwd>/home/foo/bar`
+
+  
+
 

@@ -142,6 +142,8 @@ makepkg -si
   `normalize`: `path.normalize(path.resolve('home/foo', 'bar'))` results in
   `<pwd>/home/foo/bar`
 
+## express, default error handler middleware signature:
+  * `(err, req, res, next) => {/*something*/}`
   
 
 

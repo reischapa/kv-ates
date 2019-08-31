@@ -55,6 +55,9 @@ makepkg -si
     * nm-connection-editor
     * ttf-ms-fonts (for helvetica and other "default" ms fonts)
 
+## general, generate random string with `openssl`:
+  * `openssl rand -base64 <size>`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

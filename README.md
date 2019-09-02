@@ -143,7 +143,7 @@ makepkg -si
 
   * To get an absolute filepath from `resolve`, we would then pass it to
   `normalize`: `path.normalize(path.resolve('home/foo', 'bar'))` results in
-  `<pwd>/home/foo/bar`
+  `${process.cwd}/home/foo/bar`
 
 ## npm, express package, default error handler middleware signature:
   * `(err, req, res, next) => {/*something*/}`

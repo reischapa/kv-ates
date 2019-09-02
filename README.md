@@ -161,3 +161,8 @@ makepkg -si
   * if you define a `type` in the descriptor that is passed to `addKeyword`, then
     the validator only tries to apply that validator to a value of that type
     (!!!!)
+
+## markdown, syntax:
+  * links: `[]()` (square then round)
+
+  * more help: https://www.markdownguide.org/basic-syntax

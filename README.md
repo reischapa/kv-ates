@@ -151,7 +151,7 @@ makepkg -si
 ## npm, express package, set response headers:
   * `res.set(<header name>, <header value>)`
 
-## npm, correct CORS headers:
+## npm, express package, correct CORS headers:
   * required in all methods, but when in OPTIONS middleware, return 200 and send
     immediately instead of calling `next`.
 

@@ -155,3 +155,9 @@ makepkg -si
   * required in all methods, but when in OPTIONS middleware, return 200 and send
     immediately instead of calling `next`.
 
+## npm, ajv package, custom validator:
+  * use `ajv.addKeyword(<keyword>, <descriptor>)`
+
+  * if you define a `type` in the descriptor that is passed to `addKeyword`, then
+    the validator only tries to apply that validator to a value of that type
+    (!!!!)

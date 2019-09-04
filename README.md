@@ -155,6 +155,9 @@ makepkg -si
   * required in all methods, but when in OPTIONS middleware, return 200 and send
     immediately instead of calling `next`.
 
+## npm, express package, use middleware on all routes:
+  * `app.use('*', <middleware>);`
+
 ## npm, ajv package, custom validator:
   * use `ajv.addKeyword(<keyword>, <descriptor>)`
 

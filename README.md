@@ -54,6 +54,8 @@ makepkg -si
     * thunar/nautilus (makes usb drives so much easier)
     * nm-connection-editor
     * ttf-ms-fonts (for helvetica and other "default" ms fonts)
+    * blueman (check if blueman-pulseaudio gets installed)
+    * pulseaudio
 
 ## general, generate random string with `openssl`:
   * `openssl rand -base64 <size>`

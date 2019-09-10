@@ -44,6 +44,7 @@ makepkg -si
     * feh
     * compton
     * .git-bash
+    * fzf
     * autojump
     * rofi
     * polybar
@@ -56,6 +57,9 @@ makepkg -si
     * ttf-ms-fonts (for helvetica and other "default" ms fonts)
     * blueman (check if blueman-pulseaudio gets installed)
     * pulseaudio
+
+## general, configure suspend on lid close:
+  * edit `/etc/systemd/logind.conf`, reboot
 
 ## general, generate random string with `openssl`:
   * `openssl rand -base64 <size>`

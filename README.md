@@ -60,6 +60,9 @@ makepkg -si
 ## general, generate random string with `openssl`:
   * `openssl rand -base64 <size>`
 
+## general, list swap partitions:
+  * `swapon -s` or `cat /proc/swaps`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

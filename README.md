@@ -122,7 +122,7 @@ makepkg -si
     ```
 
 ## JavaScript, check if value is numeric:
-  * `const isNan => !isNaN(parseFloat(n)) && isFinite(n);` (kinda oldschool, but works)
+  * `const isNumeric => !isNaN(parseFloat(n)) && isFinite(n);` (kinda oldschool, but works)
 
 ## git, show diff without header and add context:
   * `git diff --no-prefix -U1000 HEAD^ HEAD` 

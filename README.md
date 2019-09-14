@@ -121,7 +121,7 @@ makepkg -si
     console.log(typeof name) // "string"
     ```
 
-## JavaScript, check if value is numeric:
+## JavaScript, check if value is numeric ([SO answer](https://stackoverflow.com/a/9716488)):
   * `const isNumeric => !isNaN(parseFloat(n)) && isFinite(n);` (kinda oldschool, but works)
 
 ## git, show diff without header and add context:

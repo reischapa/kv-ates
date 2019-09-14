@@ -111,7 +111,7 @@ makepkg -si
 ## shell/Bash, single line `while`:
   * `while true; do foo; sleep 2; done;`
 
-## javascript, what the...:
+## JavaScript, what the...:
   * in browsers, any global variable called `name` declared in the global scope is INVARIABLY treated as 
     if it is a string (credit to [@joaosamouco](https://github.com/joaosamouco)
     and [@joaopintomfc](https://github.com/joaopintomfc)):
@@ -120,6 +120,9 @@ makepkg -si
     var name = () => 1;
     console.log(typeof name) // "string"
     ```
+
+## JavaScript, check if value is numeric:
+  * `const isNan => !isNaN(parseFloat(n)) && isFinite(n);` (kinda oldschool, but works)
 
 ## git, show diff without header and add context:
   * `git diff --no-prefix -U1000 HEAD^ HEAD` 

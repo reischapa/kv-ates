@@ -65,7 +65,7 @@ makepkg -si
   * `openssl rand -base64 <size>`
 
 ## general, list swap partitions:
-  * `swapon -s` or `cat /proc/swaps`
+  * `swapon -s` or `cat /proc/swaps`  
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
@@ -181,3 +181,10 @@ makepkg -si
   * links: `[]()` (square then round)
 
   * more help: https://www.markdownguide.org/basic-syntax
+
+## http, difference between PUT and PATCH:
+  _I know, I know, I should know this, but I always get which is which wrong..._
+
+  * PUT is a full-entity replacement of an existing entity. Idempotent.
+
+  * PATCH is a partial update of an existing entity. NOT idempotent.

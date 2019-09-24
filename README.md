@@ -188,3 +188,8 @@ makepkg -si
   * PUT is a full-entity replacement of an existing entity. Idempotent.
 
   * PATCH is a partial update of an existing entity. NOT idempotent.
+
+## html, icons that pull events into the void:
+  * `<i>` elements (at least, those that have FontAwesome classes) need to have 
+    `pointer-events: none;` in their CSS in order to allow clicks to pass through to other
+    elements behind them

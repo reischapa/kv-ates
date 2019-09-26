@@ -68,7 +68,7 @@ makepkg -si
   * `swapon -s` or `cat /proc/swaps`  
 
 ## general, compact XOR ([source](http://www.howtocreate.co.uk/xor.html)):
-  * `A XOR B = NOT ( NOT A == NOT B)`
+  * `A XOR B = NOT (NOT A == NOT B)`
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc

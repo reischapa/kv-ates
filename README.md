@@ -78,6 +78,11 @@ makepkg -si
   * `.class1.class2`: means needs to have both
   * `.class1, .class2`: means has one or the other
 
+## css, icons that pull events into the void:
+  * `<i>` elements (at least, those that have FontAwesome classes) need to have 
+    `pointer-events: none;` in their CSS in order to allow clicks to pass through to other
+    elements behind them
+
 ## webpack (2, not sure about other versions), ignore files in  watch mode:
   * Use watchIgnorePlugin, NEEDS ABSOLUTE PATHS TO WORK (could not get it to work otherwise).
 
@@ -191,8 +196,3 @@ makepkg -si
   * PUT is a full-entity replacement of an existing entity. Idempotent.
 
   * PATCH is a partial update of an existing entity. NOT idempotent.
-
-## html, icons that pull events into the void:
-  * `<i>` elements (at least, those that have FontAwesome classes) need to have 
-    `pointer-events: none;` in their CSS in order to allow clicks to pass through to other
-    elements behind them

@@ -22,42 +22,6 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
-
-## general, needed programs: 
-  * npm:
-    * npx
-    * nodemon
-    * n (don't forget to setup so that changes do not need sudo)
-    * babel-cli
-    * prettier
-    * lerna
-    * webpack
-
-  * others:
-    * lxterminal
-    * realtek driver (depends on hardware)
-    * yay
-    * ssh
-    * keepass
-    * jq
-    * pulsemixer
-    * feh
-    * compton
-    * .git-bash
-    * fzf
-    * autojump
-    * rofi
-    * polybar
-    * ~~vim~~ nope, gvim due to clipboard integration
-    * python
-    * node
-    * mobile-broadband-provider, modemmanager (3g, if not installed by installer)
-    * thunar/nautilus (makes usb drives so much easier)
-    * nm-connection-editor
-    * ttf-ms-fonts (for helvetica and other "default" ms fonts)
-    * blueman (check if blueman-pulseaudio gets installed)
-    * pulseaudio
-
 ## general, configure suspend on lid close:
   * edit `/etc/systemd/logind.conf`, reboot
 

@@ -138,6 +138,9 @@ makepkg -si
 ## git, reference to nth last commit:
   * `git diff HEAD~n HEAD`
 
+## git, pull and init submodules:
+  * `git submodule update --init --recursive`
+
 ## grub, recover from command line:
   ```
   set pager=1

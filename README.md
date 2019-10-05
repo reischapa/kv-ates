@@ -70,6 +70,9 @@ makepkg -si
 ## general, compact XOR ([source](http://www.howtocreate.co.uk/xor.html)):
   * `A XOR B = NOT (NOT A == NOT B)`
 
+## general, remember ssh key auth for a terminal session:
+  * `eval $(ssh-agent) && ssh-add`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

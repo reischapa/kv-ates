@@ -37,6 +37,9 @@ makepkg -si
 ## general, remember ssh key auth for a terminal session:
   * `eval $(ssh-agent) && ssh-add`
 
+## general, show visual keys representation when connecting with ssh:
+  * use `VisualHostKey yes` in `/etc/sshd/sshd_config`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

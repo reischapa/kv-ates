@@ -1,7 +1,5 @@
-## virtualbox, mounting physical drive:
-```
-vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /dev/sdb
-```
+## ansible, end playbook early:
+  * use `meta` module: `- meta: end_play`
 
 ## lightdm, testing mode: 
 ```
@@ -169,3 +167,8 @@ makepkg -si
   * PUT is a full-entity replacement of an existing entity. Idempotent.
 
   * PATCH is a partial update of an existing entity. NOT idempotent.
+
+## virtualbox, mounting physical drive:
+```
+vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /dev/sdb
+```

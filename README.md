@@ -172,3 +172,6 @@ makepkg -si
 ```
 vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /dev/sdb
 ```
+
+## sed, delete empty lines:
+  * `sed '/^$/d'` (delete mode on sed with `d`)

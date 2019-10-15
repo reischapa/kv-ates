@@ -175,3 +175,6 @@ vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /d
 
 ## sed, delete empty lines:
   * `sed '/^$/d'` (delete mode on sed with `d`)
+
+## xrandr, set resolution and refresh rate in the same command:
+  * `xrandr --output <output name> --mode <resolution> --rate <refresh rate>` 

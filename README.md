@@ -2,24 +2,24 @@
   * use `meta` module: `- meta: end_play`
 
 ## lightdm, testing mode: 
-```
-lightdm --test-mode
-```
+  ```
+  lightdm --test-mode
+  ```
 
 ## systemd, add service: 
-```
-sudo vim /etc/systemd/system/<serviceName>.conf
-sudo systemctl daemon-reload
-sudo systemctl <serviceName> enable
-sudo systemctl <serviceName> start 
-```
+  ```
+  sudo vim /etc/systemd/system/<serviceName>.conf
+  sudo systemctl daemon-reload
+  sudo systemctl <serviceName> enable
+  sudo systemctl <serviceName> start 
+  ```
 
 ## general, install `yay`:
-```
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
+  ```
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  ```
 ## general, configure suspend on lid close:
   * edit `/etc/systemd/logind.conf`, reboot
 
@@ -31,12 +31,6 @@ makepkg -si
 
 ## general, compact XOR ([source](http://www.howtocreate.co.uk/xor.html)):
   * `A XOR B = NOT (NOT A == NOT B)`
-
-## general, remember ssh key auth for a terminal session:
-  * `eval $(ssh-agent) && ssh-add`
-
-## general, show visual keys representation when connecting with ssh:
-  * use `VisualHostKey yes` in `/etc/ssh/sshd_config`
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
@@ -169,12 +163,23 @@ makepkg -si
   * PATCH is a partial update of an existing entity. NOT idempotent.
 
 ## virtualbox, mounting physical drive:
-```
-vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /dev/sdb
-```
+  ```
+  vboxmanage internalcommands createrawvmdk -filename $HOME/win10.vmdk -rawdisk /dev/sdb
+  ```
 
 ## sed, delete empty lines:
   * `sed '/^$/d'` (delete mode on sed with `d`)
+
+## ssh, remember ssh key auth for a terminal session:
+  * `eval $(ssh-agent) && ssh-add`
+
+## ssh, show visual keys representation when connecting with ssh:
+  * use `VisualHostKey yes` in `/etc/ssh/sshd_config`
+
+## ssh, local port forwarding:
+  * `ssh <server user>@<server host> -L <address in local host>:<address in remote server> -N`
+
+  * the `-N` flag makes it so that a shell is not opened
 
 ## xrandr, set resolution and refresh rate in the same command:
   * `xrandr --output <output name> --mode <resolution> --rate <refresh rate>` 

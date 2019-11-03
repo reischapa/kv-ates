@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-cd viewer
+cd ../;
 
-npm run save:c
+git add .
+
+git commit -m 'update README.md'
+
+git push 
+

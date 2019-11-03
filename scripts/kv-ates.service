@@ -7,7 +7,7 @@ StandardOutput=journal
 
 WorkingDirectory=/home/chapa
 
-ExecStart=/home/chapa/kv-ates/viewer/scripts/run-dev.sh
+ExecStart=/home/chapa/kv-ates/scripts/run-dev.sh
 
 [Install]
 WantedBy=default.target

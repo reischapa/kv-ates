@@ -94,6 +94,24 @@
 ## JavaScript, check if value is numeric ([SO answer](https://stackoverflow.com/a/9716488)):
   * `const isNumeric = n => !isNaN(parseFloat(n)) && isFinite(n);` (kinda oldschool, but works)
 
+## JavaScript, difference between `isNaN` and `Number.isNaN`:
+  * `isNaN` attempts to convert the value to a number and then checks whether
+    the result equals `NaN`;
+
+  * `Number.isNaN` checks whether the input is exactly `NaN` (without conversion);
+
+  ```
+  Number.isNaN(void 0) === false
+
+  isNaN(void 0) === true
+  ```
+
+## JavaScript, difference between `isFinite` and `Number.isFinite`:
+  * `isFinite` attempts to convert the value to a number and then checks whether
+    it is finite;
+
+  * `Number.isFinite` performs the check without conversion;
+
 ## git, show diff without header and add context:
   * `git diff --no-prefix -U1000 HEAD^ HEAD` 
 

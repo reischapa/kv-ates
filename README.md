@@ -121,6 +121,9 @@
 ## git, pull and init submodules:
   * `git submodule update --init --recursive`
 
+## git, log without pager:
+  * `git --no-pager log > log.txt`
+
 ## grub, recover from command line:
   ```
   set pager=1

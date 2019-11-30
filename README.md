@@ -32,6 +32,12 @@
 ## general, compact XOR ([source](http://www.howtocreate.co.uk/xor.html)):
   * `A XOR B = NOT (NOT A == NOT B)`
 
+## general, `xargs` delimiter flag (in case there is the possibility of having whitespace in a line):
+  * `xargs -d '\n' <input>`
+
+## general, `sort` by a given column:
+  * `sort -k <column number> <input>`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

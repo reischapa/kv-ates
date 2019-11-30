@@ -12,6 +12,6 @@
   "author": "João Chapa",
   "license": "ISC",
   "dependencies": {
-    "a6e": "^0.0.4"
+    "a6e": "^0.0.5"
   }
 }

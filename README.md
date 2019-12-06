@@ -130,6 +130,9 @@
 ## git, log without pager:
   * `git --no-pager log > log.txt`
 
+## git, exclude files matching a certain pattern from diff ([stackoverflow](https://stackoverflow.com/a/29374503)):
+  * `git diff --cached -- . ':!spec'`
+
 ## grub, recover from command line:
   ```
   set pager=1

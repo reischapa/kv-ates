@@ -38,6 +38,9 @@
 ## general, `sort` by a given column:
   * `sort -k <column number> <input>`
 
+## general, manually set keyboard layout/variant:
+  * `setxkbmap <layout> <variant>`
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

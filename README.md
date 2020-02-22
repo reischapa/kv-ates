@@ -43,6 +43,13 @@
 ## general, manually set keyboard layout/variant:
   * `setxkbmap <layout> <variant>`
 
+## general, mnemonic for little and big endian ([source](https://softwareengineering.stackexchange.com/questions/142926/is-there-any-practical-trick-to-remember-the-difference-between-big-endian-and-l/294831)):
+  * big endian: the large part of the number is first (big first)
+    - similar to common usage: 123 = 1 * 10^2 + 2 * 10^1 + 3 * 10^0
+
+  * little endian: the small part of the number is first (little first)
+    - exponents order follows digit iteration order, so 123 is 321 in LE: 321 = 3 * 10^0 + 2 * 10^1 + 3 * 10^2 
+
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
 

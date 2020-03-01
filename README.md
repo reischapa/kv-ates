@@ -43,12 +43,20 @@
 ## general, manually set keyboard layout/variant:
   * `setxkbmap <layout> <variant>`
 
+## general, `timedatectl` command:
+  * set system timezone: `timedatectl set-timezone Europe/Berlin`
+
+  * list timezones: `timedatectl list-timezones`
+
 ## general, mnemonic for little and big endian ([source](https://softwareengineering.stackexchange.com/questions/142926/is-there-any-practical-trick-to-remember-the-difference-between-big-endian-and-l/294831)):
   * big endian: the large part of the number is first (big first)
     - similar to common usage: 123 = 1 * 10^2 + 2 * 10^1 + 3 * 10^0
 
   * little endian: the small part of the number is first (little first)
     - exponents order follows digit iteration order, so 123 is 321 in LE: 321 = 3 * 10^0 + 2 * 10^1 + 3 * 10^2 
+
+## general, `watch` command:
+  * `-n` flag defines time interval: `watch -n 2 nmcli`
 
 ## autojump, script: 
   * ~~autojump on arch needs a symlink from the .bash to .sh~~ nope, solved on .bashrc
@@ -129,6 +137,25 @@
     it is finite;
 
   * `Number.isFinite` performs the check without conversion;
+
+## Jest/Enzyme, wait for async calls/promise resolution before proceeding with test:
+  * when using Enzyme `mount`, async calls in or triggered by lifecycle methods (such as `componentDidMount`) 
+    will not be waited for, even if remote calls are stubbed/mocked using `jest.fn().mockResolvedValue` or the like.
+    (does not mean that they will not be resolved, but they may end up resolving at a later time than expected)
+   
+
+  * to make sure that pending promises are executed after calling 'mount', use `setImmediate`:
+  ```
+  test('Foo does a network request on componentDidMount', async () => {
+      const component = mount(<Foo />);
+
+      // if you do not use this line, the assertion below may (and probably will) fail
+      await new Promise(res => setImmediate(res));
+
+      expect(fetch).toHaveBeenCalled();
+  })
+  
+  ``` 
 
 ## git, show diff without header and add context:
   * `git diff --no-prefix -U1000 HEAD^ HEAD` 

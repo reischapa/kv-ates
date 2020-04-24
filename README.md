@@ -227,6 +227,18 @@
 
   * more help: https://www.markdownguide.org/basic-syntax
 
+## Postman, generate values:
+  * uuid: `{{$guid()}}`
+  * defining custom keywords:
+  ```
+  // in the pre-request script section:
+  pm.globals.set('randomNumber', Math.floor(Math.random() * 5));
+
+  // in the request body:
+  {{randomNumber}}
+  ```
+     
+
 ## http, difference between PUT and PATCH:
   _I know, I know, I should know this, but I always get which is which wrong..._
 

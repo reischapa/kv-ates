@@ -225,6 +225,8 @@
 ## markdown, syntax:
   * links: `[]()` (square then round)
 
+  * checkboxes: `- [ ] Foo bar`
+
   * more help: https://www.markdownguide.org/basic-syntax
 
 ## Postman, generate values:

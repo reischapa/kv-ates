@@ -16,6 +16,9 @@
   sudo systemctl <serviceName> start 
   ```
 
+## general, use feh to quickly navigate svg files inside a folder:
+  * feh --conversion-timeout 1 -g 640x480 -d -S filename .
+
 ## general, install `yay`:
   ```
   git clone https://aur.archlinux.org/yay.git

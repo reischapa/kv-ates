@@ -178,6 +178,9 @@
 ## git, list url for origin:
   * `git remote get-url <origin name>`
 
+## git, caveat regarding --depth
+  * if `--depth` is set, pulling from remote does **nothing**.
+
 ## grub, recover from command line:
   ```
   set pager=1

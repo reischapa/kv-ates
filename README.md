@@ -275,3 +275,8 @@
 
 ## xrandr, set resolution and refresh rate in the same command:
   * `xrandr --output <output name> --mode <resolution> --rate <refresh rate>` 
+
+## postgres, local host access
+  * change postgres config to allow any host access (if accessing from docker)
+  * add user/db/pwd as necessary
+  * change pg_hba to allow access as that user to the db
